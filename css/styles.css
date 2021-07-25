@@ -1,0 +1,122 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid pink;
+  margin: 0 auto;
+}
+
+thead,
+tfoot {
+  background: pink;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}
+
+tbody td {
+  border: 1px solid #ccc;
+  cursor: pointer;
+  user-select: none;
+}
+
+tbody td:first-child {
+  color: red;
+}
+
+tbody td:last-child {
+  color: blue;
+}
+
+tfoot {
+  font-weight: bold;
+}
+
+.disabled {
+  opacity: 0.3;
+}
+
+.today {
+  font-weight: bold;
+}
+
+#prev,
+#next,
+#today {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* 以下TodoList */
+
+#close {
+  width: 100px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 8px;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+  user-select: none;
+}
+
+#mask {
+  background: pink;
+  opacity: 0.4;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#modal {
+  width: 300px;
+  text-align: center;
+  background: white;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 16px;
+  border-radius: 4px;
+  transition: transform .4s;
+}
+
+section h1 {
+  margin: 0 0 16px;
+}
+
+input {
+  padding: 4px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  user-select: none;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+#mask.hidden {
+  display: none;
+}
+
+#modal.hidden {
+  transform: translate(0, -500px);
+}
+
