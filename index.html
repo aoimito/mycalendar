@@ -29,18 +29,21 @@
       <tr>
         <td id="today" colspan="7">Today</td>
       </tr>
+      <!-- 以下TodoList -->
+      <tr>
+        <td id="open" colspan="7">Memo</td>
+        <div id="mask" class="hidden"></div>
+        <section id="modal" class="hidden">
+          <h1>Memo</h1>
+          <form id="form">
+            <input type="text" id="input" placeholder="Memoを入力" autocomplete="off">
+          </form>
+          <ul id="ul"></ul>
+          <div id="close">CLOSE</div>
+        </section>
+      </tr>
     </tfoot>
   </table>
-<!-- 以下TodoList -->
-  <div id="mask" class="hidden"></div>
-  <section id="modal" class="hidden">
-    <h1>TODO</h1>
-    <form id="form">
-      <input type="text" id="input" placeholder="TODOを入力">
-    </form>
-    <ul id="ul"></ul>
-    <div id="close">CLOSE</div>
-  </section>
   
   <script src="js/main.js"></script>
 </body>
