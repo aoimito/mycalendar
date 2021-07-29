@@ -155,7 +155,7 @@
 
   //  Memo
 
-  // const form = document.getElementById('form');
+  const form = document.getElementById('form');
   const input = document.getElementById('input');
   const button = document.getElementById('button');
   const ul = document.getElementById('ul');
@@ -168,7 +168,7 @@
     });
   }
 
-  button.addEventListener('click', (e) => {
+  form.addEventListener('submit', (e) => {
     e.preventDefault();
     add();
   });
@@ -190,7 +190,7 @@
         li.classList.add('completed');
       }
 
-      li.addEventListener('contextmenu', (e) => {
+      button.addEventListener('click', (e) => {
         e.preventDefault();
         li.remove();
         saveData();
