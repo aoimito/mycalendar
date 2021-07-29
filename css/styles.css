@@ -1,0 +1,142 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+}
+
+div.calendar {
+  margin-bottom: 16px;
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+header h1 {
+  color: gray;
+
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid grey;
+  text-align: center;
+  margin: 0 auto;
+}
+
+thead,
+tfoot {
+  background: grey;
+  color: white;
+}
+
+th,
+td {
+  padding: 8px;
+}
+
+tbody td {
+  border: 1px solid lightgray;
+}
+
+tbody td:first-child {
+  color: red;
+}
+
+tbody td:last-child {
+  color: blue;
+}
+
+tfoot {
+  font-weight: bold;
+}
+
+.disabled {
+  opacity: 0.4;
+}
+
+.today {
+  font-weight: bold;
+  background: lightgrey;
+}
+
+#prev, 
+#next,
+#today,
+#open,
+#close,
+button,
+li {
+  cursor: pointer;
+  user-select: none;
+}
+
+div.todo {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* #open, */
+#close {
+  width: 100px;
+  background: gray;
+  color: white;
+  border: 1px solid gray;
+  padding: 8px;
+  margin: 0 auto;
+}
+
+#mask {
+  background: lightpink;
+  opacity: 0.4;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#modal {
+  width: 80%;
+  border-radius: 4px;
+  background: white;
+  position: absolute;
+  top: 370px;
+  left: 0;
+  right: 0;
+  margin: 0 auto 16px;
+  padding: 16px;
+  transition: transform 0.4s;
+}
+
+#modal > h2 {
+  color: gray;
+}
+
+input {
+  width: 300px;
+  padding: 4px;
+  margin: 4px;
+}
+
+button {
+  margin-top: 8px;
+}
+
+#mask.hidden {
+  display: none;
+}
+
+#modal.hidden {
+  transform: translate(-1200px, 0);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 16 0 16px;
+}
+
+.completed {
+  text-decoration: line-through;
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>オリサイCalendar</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>My Calendar</h1>
+    </header>
+    <main>
+      <div class="calendar">
+        <table>
+          <thead>
+            <tr>
+              <th id="prev">&laquo;</th>
+              <th id="title" colspan="5">2021/07</th>
+              <th id="next">&raquo;</th>
+            </tr>
+            <tr>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <td id="today" colspan="4">Today</td>
+              <td id="open" colspan="3">Memo</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div class="todo">
+        <div id="mask" class="hidden"></div>
+        <section id="modal" class="hidden">
+          <h2>Memo</h2>
+            <input type="text" placeholder="Todoを入力" id="input">            
+            <button type="submit" id="button">Save</button>           
+          <ul id="ul"></ul>
+          <div id="close">Close</div>
+        </section>
+      </div>
+    </main>
+    
+    <script src="js/main.js"></script>
+  </body>
+</html>
