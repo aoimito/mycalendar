@@ -157,7 +157,8 @@
 
   const form = document.getElementById('form');
   const input = document.getElementById('input');
-  const button = document.getElementById('button');
+  const save = document.getElementById('save');
+  const clear = document.getElementById('clear');
   const ul = document.getElementById('ul');
 
   const todos = JSON.parse(localStorage.getItem('todos'));
@@ -168,7 +169,7 @@
     });
   }
 
-  form.addEventListener('submit', (e) => {
+  save.addEventListener('click', (e) => {
     e.preventDefault();
     add();
   });
@@ -190,7 +191,7 @@
         li.classList.add('completed');
       }
 
-      button.addEventListener('click', (e) => {
+      clear.addEventListener('click', (e) => {
         e.preventDefault();
         li.remove();
         saveData();
