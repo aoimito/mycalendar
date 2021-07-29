@@ -105,12 +105,13 @@ div.todo {
   left: 0;
   right: 0;
   margin: 0 auto 16px;
-  padding: 16px;
+  padding: 8px;
   transition: transform 0.4s;
 }
 
 #modal > h2 {
   color: gray;
+  padding: 0;
 }
 
 input {
@@ -120,7 +121,7 @@ input {
 }
 
 button {
-  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 #mask.hidden {
